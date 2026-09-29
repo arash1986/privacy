@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Expirio: Expiry & Reminders</title>
+    <style>
+        :root {
+            --primary: #2E8B57;
+            --accent: #00CEC8;
+            --bg-dark: #1E2A4A;
+            --surface-dark: #293655;
+            --text-light: #F7F3E8;
+            --text-muted: #B3F7F3E8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: var(--surface-dark);
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 28px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 20px;
+            margin-top: 25px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background: rgba(46, 139, 87, 0.15);
+            border: 1px solid var(--primary);
+            padding: 16px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy for Expirio: Expiry & Reminders</h1>
+    <div class="meta">
+        <strong>Effective Date:</strong> September 29, 2026 |
+        <strong>Application Package:</strong> com.arashabd.reminder
+    </div>
+
+    <p>Welcome to <strong>Expirio: Expiry & Reminders</strong> ("Expirio", "we", "our", or "us"). We are dedicated to protecting your privacy and ensuring a secure experience when using our mobile application on Android.</p>
+
+    <h2>1. Information Collection and Use</h2>
+
+    <h3>A. Personal Account Data (Optional Google Sign-In)</h3>
+    <p>Expirio allows usage in <strong>Guest Mode</strong> (100% offline, no account required) or via <strong>Google Account Sign-In</strong>.</p>
+    <ul>
+        <li><strong>Data Collected:</strong> When signing in with Google, we process your Display Name, Email Address, and Profile Picture URL via <strong>Firebase Authentication</strong>.</li>
+        <li><strong>Purpose:</strong> Authenticating your identity and enabling cloud backup across devices.</li>
+    </ul>
+
+    <h3>B. Device Camera & Scanner Access</h3>
+    <ul>
+        <li><strong>Permission:</strong> <code>android.permission.CAMERA</code></li>
+        <li><strong>Purpose:</strong> Used exclusively when you initiate optical barcode scanning (medical/food expiration) or receipt OCR processing via Google ML Kit.</li>
+        <li><strong>Privacy Guarantee:</strong> Camera frames are processed on-device in real-time. No video feeds or photos are stored or transmitted.</li>
+    </ul>
+
+    <h3>C. System Alarms & Notifications</h3>
+    <p>To deliver timely reminders and alarms, Expirio uses system permissions including <code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>, <code>USE_FULL_SCREEN_INTENT</code>, and <code>RECEIVE_BOOT_COMPLETED</code> to reschedule alarms after device reboot.</p>
+
+    <h3>D. AI Recipe Assistant (Google Gemini AI)</h3>
+    <p>Expirio offers an AI Recipe Assistant powered by <strong>Google Gemini API</strong>. When generating recipes, the app sends only selected expiring food item names (e.g. <em>"Milk, Eggs, Tomatoes"</em>) and language settings. No personal account credentials or device IDs are sent to AI servers.</p>
+
+    <h2>2. Third-Party Service Providers</h2>
+    <p>Expirio integrates trusted Google services:</p>
+    <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Authentication, Firestore, Crashlytics & Analytics</a></li>
+        <li><a href="https://developers.google.com/ml-kit/terms" target="_blank">Google ML Kit Text Recognition</a></li>
+        <li><a href="https://policies.google.com/terms" target="_blank">Google Gemini AI</a></li>
+    </ul>
+
+    <h2>3. Data Storage & Security</h2>
+    <div class="card">
+        <strong>Security Architecture:</strong> Your data is stored locally in an encrypted SQLite database (<code>Room</code>). Cloud data is stored in Firebase Firestore (encrypted at rest and in transit). App configuration tokens are protected using native binary encryption and Google Cloud security restrictions.
+    </div>
+
+    <h2>4. User Controls & Data Deletion</h2>
+    <p>You can delete local data anytime via App Settings or request cloud data deletion by emailing <code>arash.abdorrahimi.dev@gmail.com</code>.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Expirio is not directed to children under 13 years of age.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>For any questions or privacy inquiries, contact us at:</p>
+    <ul>
+        <li><strong>Developer:</strong> Arash Abd</li>
+        <li><strong>Email:</strong> <a href="mailto:arash.abdorrahimi.dev@gmail.com">arash.abdorrahimi.dev@gmail.com</a></li>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/arashabd/Reminder" target="_blank">github.com/arashabd/Reminder</a></li>
+    </ul>
+
+    <footer>
+        &copy; 2026 Expirio: Expiry & Reminders. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
